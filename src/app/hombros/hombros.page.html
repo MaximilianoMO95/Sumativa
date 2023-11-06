@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
+    <ion-title>Hombros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let ejercicio of ejercicios">
+      <ion-thumbnail slot="start">
+        <img [src]="ejercicio.imagen" alt="{{ ejercicio.nombre }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ ejercicio.nombre }}</h2>
+        <p class="descripcion">{{ ejercicio.descripcion }}</p>
+      </ion-label>
+      <ion-button expand="full" (click)="agregarARutina(ejercicio.nombre)">Añadir a mi rutina</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

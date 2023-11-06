@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "Pull-ups",
+      "descripcion": "Ejercicio compuesto para trabajar los dorsales",
+      "imagen": "assets/img/Pullup.jpg"
+    },
+    {
+      "nombre": "Remo",
+      "descripcion": "Buen ejercicio para la zona media de la espalda",
+      "imagen": "assets/img/remo-barra.jpg"
+    }
+  
+  ]

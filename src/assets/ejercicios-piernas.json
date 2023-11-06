@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "Sentadilla",
+      "descripcion": "Ejercicio ideal para trabaja de forma completa las piernas",
+      "imagen": "assets/img/Sentadilla.jpeg"
+    },
+    {
+      "nombre": "Curl Sentado",
+      "descripcion": "Ejercicio para aislar completamente el cuadriceps",
+      "imagen": "assets/img/Leg-extension.jpg"
+    }
+  
+  ]

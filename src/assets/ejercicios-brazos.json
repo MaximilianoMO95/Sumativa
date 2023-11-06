@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "Curl Alternado",
+      "descripcion": "Excelente ejercicio para trabajar cada biceps por separado",
+      "imagen": "assets/img/Curl-Mancuerna.jpeg"
+    },
+    {
+      "nombre": "Polea Triceps",
+      "descripcion": "Ejercicio ideal para aislar los triceps y lograr mayor contraccion",
+      "imagen": "assets/img/Triceps-Polea.jpg"
+    }
+  
+  ]

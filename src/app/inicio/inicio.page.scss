@@ -1,0 +1,116 @@
+ion-header {
+
+    ion-toolbar, ion-item {
+      --background: #f1f5f8;
+      background: #f1f5f8;
+      padding: 0 10px;
+    }
+
+    ion-item {
+        h3 {
+          font-weight: 700;
+          font-size: 14px;
+          
+        }
+    
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          color:black;
+          text-transform: uppercase;
+        }
+    
+        ion-avatar {
+          --border-radius: 40%;
+        }
+      }
+}
+
+ion-content {
+    --background: linear-gradient(90deg, rgb(15, 18, 20) 0%, rgb(12, 13, 15) 35%, rgbrgb(15, 17, 20)0%);
+  
+    
+}
+
+swiper-container{
+    
+    max-height: 70vh; 
+    margin: 0 auto; 
+}
+
+swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.texto {
+    color:black;
+    text-transform: uppercase;
+}
+
+.consejo-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center; 
+     
+    margin-top: 40px;
+  }
+  
+
+  .fade-in {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .consejo-container {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s; 
+    
+  }
+  
+  
+  .consejo-text {
+    font-size: 16px;
+    color: #333232;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+ 
+  .center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-icon {
+    font-size: 24px; 
+    color: #007bff; 
+  }
+  
+  .app-name {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #6d6c6c; 
+  }
+ 
+ 
+ 

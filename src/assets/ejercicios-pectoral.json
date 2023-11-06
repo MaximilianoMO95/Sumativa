@@ -1,0 +1,13 @@
+[
+    {
+      "nombre": "Press Banca",
+      "descripcion": "Ejercicio compuesto para trabajar completamente el pectoral",
+      "imagen": "assets/img/Press-Banca.jpeg"
+    },
+    {
+      "nombre": "Cruze Poleas",
+      "descripcion": "Ejercicio para atacar al pectorales en distintos angulos",
+      "imagen": "assets/img/Cruze-Poleas.jpg"
+    }
+  
+  ]

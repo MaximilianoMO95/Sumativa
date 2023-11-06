@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+
+  <ion-item lines="none">
+
+    <ion-avatar slot="start">
+      <img src="assets/img/avatar.png">
+    </ion-avatar>
+      <ion-label>
+        <p>Bienvenido</p>
+      </ion-label>   
+        <h3 class="texto">{{ nombreUsuario }}</h3>
+  </ion-item>
+
+</ion-header>
+
+<ion-content>
+
+
+  <swiper-container (slidechange)="swiperSlideChanged($event)"[loop]="true"[pagination]="true">
+    <swiper-slide *ngFor="let image of images">
+      <img [src]="image" />
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="consejo-title">
+    Consejo del Día
+  </div>
+
+  <div class="consejo-container">
+    <p class="consejo-text">
+      "Sabías que consumir 1 g de proteína por kg de peso es lo recomendado para aumentar masa muscular"
+    </p>
+  </div>
+
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="center-content">
+      <ion-col size="auto">
+        <ion-icon name="logo" src="assets/icon/logo.svg" class="logo-icon"></ion-icon>
+      </ion-col>
+      <ion-col size="auto">
+        <p class="app-name">Fitmonk</p>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>
