@@ -34,7 +34,12 @@ const routes: Routes = [
       {
         path: 'rutina',
         loadChildren: () => import('../rutina/rutina.module').then( m => m.RutinaPageModule)
-      },]
+      },
+      {
+        path: 'plan-nutricional',
+        loadChildren: () => import('../plan-nutricional/plan-nutricional.module').then( m => m.PlanNutricionalPageModule)
+      },
+      ]
   }
 ];
 

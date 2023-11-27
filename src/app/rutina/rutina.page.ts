@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MiServicioRutina } from '../mi-servicio-rutina.service'; 
+import { MiServicioRutina } from '../mi-servicio-rutina.service';
+import { JsonplaceholderService } from '../jsonplaceholder.service';  
+import { ThemealdbService } from '../themealdb.service';
 
 @Component({
   selector: 'app-rutina',
@@ -7,17 +9,24 @@ import { MiServicioRutina } from '../mi-servicio-rutina.service';
   styleUrls: ['./rutina.page.scss'],
 })
 export class RutinaPage implements OnInit {
+  ejerciciosEnRutina: string[] = [];
 
-  ejerciciosEnRutina: string[]; 
-
-  constructor(private miServicioRutina: MiServicioRutina) {
-    // Obtener la lista de ejercicios de la rutina desde el servicio
+  constructor(
+    private miServicioRutina: MiServicioRutina,
+    private jsonPlaceholderService: JsonplaceholderService,
+    private themealdbService: ThemealdbService
+  ) {
     this.ejerciciosEnRutina = this.miServicioRutina.obtenerRutina();
   }
 
- 
+  ngOnInit() {}
 
-  ngOnInit() {
+  obtenerMasInformacion() {
+    
+    this.jsonPlaceholderService.getPosts().subscribe((data) => {
+      
+      this.ejerciciosEnRutina = data.map((post) => post.title);
+    });
   }
 
 }

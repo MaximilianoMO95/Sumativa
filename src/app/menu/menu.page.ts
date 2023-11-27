@@ -45,6 +45,11 @@ export class MenuPage implements OnInit {
       titulo: 'Mi Rutina',
       url: '/menu/rutina',
       icono: 'book'
+    },
+    {
+      titulo: 'Plan Nutricional',
+      url: '/menu/plan-nutricional',
+      icono: 'book'
     }
   ]
 

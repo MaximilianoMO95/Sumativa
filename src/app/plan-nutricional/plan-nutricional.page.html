@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
+    <ion-title>Plan Nutricional</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="obtenerPlanNutricional()">Obtener plan nutricional</ion-button>
+
+  <ion-list *ngIf="mostrarCategorias && categoriasDeComida.length > 0">
+    <ion-item *ngFor="let categoria of categoriasDeComida">
+      {{ categoria.strCategory }}
+    </ion-item>
+  </ion-list>
+</ion-content>
